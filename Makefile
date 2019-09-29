@@ -6,10 +6,10 @@ CC = gcc
 
 #COMPILER_FLAGS specifies the additional compilation options we're using
 # -w suppresses all warnings
-COMPILER_FLAGS = -w
+COMPILER_FLAGS = -std=c99 -w
 
 #LINKER_FLAGS specifies the libraries we're linking against
-LINKER_FLAGS = -lSDL2 -lm
+LINKER_FLAGS = -lSDL2 -lSDL2_ttf -lm
 
 #OBJ_NAME specifies the name of our exectuable
 OBJ_NAME = arnSynth
