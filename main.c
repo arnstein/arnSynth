@@ -19,7 +19,7 @@ double sine_step_size;
 int sample_rate = 44100;
 double phase_double = 0;
 double octave = 1.0;
-float amplitude = 127.0;
+float amplitude = 50.0;
 double note = 0.0;
 bool sustain = true;
 
@@ -71,7 +71,7 @@ int init_sdl_video() {
     window = SDL_CreateWindow("arnSynth", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 640, 480, 0);
     renderer = SDL_CreateRenderer(window, -1, 0);
 
-	font = TTF_OpenFont("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 20);
+	font = TTF_OpenFont("/usr/share/fonts/truetype/ubuntu/UbuntuMono-R.ttf", 20);
 
 	SDL_Color color = {255, 255, 255};
 
