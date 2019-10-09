@@ -14,4 +14,17 @@ Well yes, but actually no. Even though we can easily generate the values for the
 
 ### Step 2: Getting sound out of your speakers
 
-There are many ways to do this, but since I wanted this to be easy, I decided to use SDL2. [Here](https://youtu.be/MeMPCSqQ-34) you can see a presentation about game development with SDL2 from one of the core developers of SDL2. 
+There are many ways to do this, but since I wanted this to be easy, I decided to use SDL2 (Simple DirectMedia Layer). [Here](https://youtu.be/MeMPCSqQ-34) you can see a presentation about game development with SDL2 from one of the core developers of SDL2. SDL does all the hard and scary stuff for you, so you can easily create audio and video!
+By initializing an audio interface and defining a callback function that is called when the audio device needs more data. This function sends the sine wave values to the audio device.
+
+### Step 3: Handle input
+
+SDL2 also has an easy way to handle keyboard input. In the main loop we look for keyboard events. By mapping different frequencies to different keys on the keyboard, we give the user the feeling of playing a synthesizer. Cool!
+
+### Step 4: ??? Profit? No, display the keyboard.
+
+SDL2 allows you to easily create a window and render text. I render something that looks like a keyboard, showing the keyboard bindings.
+
+### Step 5: Rock and/or roll!
+
+You are now in control of the synthesizer! 
